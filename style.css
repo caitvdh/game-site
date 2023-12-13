@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+:root {
+    --navFont:'Inter', sans-serif;;
+}
+
+section:not(.footer-section) {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--navFont);
+}
+
+/* NAVBAR */
+img {
+    height: 100px;
+}
+
+nav, img:not(.up-img) {
+    padding: 20px 10px 0px 10px;
+    font-size: 2rem;
+    font-family: var(--navFont);
+    font-weight: 700;
+    text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 0px 50px 0px 150px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+header ul {
+    display: flex;
+}
+
+
+
+/* FOOTER */
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.footer-section {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 10vh;
+}
+
+.footer-nav {
+    font-family: var(--navFont);
+    font-size: larger;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+}
+
+.footer-nav ul li a {
+    margin: 20px;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+
+
+/* PICTURE SLIDER */
+.container .button-holder .button {
+    background-color: aliceblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.container .button-holder .button:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+.container .button-holder {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 3px;
+}
+
+.title-concept {
+    margin: 100px 0px 10px 20px;
+}
+
+.three-sliders {
+    display: flex;
+    margin: 0px 10px 0px 20px;
+}
+
+.item-2 {
+    align-self: flex-end;
+    padding: 400px 10px 0px 0px;
+}
+
+.container .wrapper {
+    width: 32vw;
+    height: 35vh;
+    border-radius: 20px;
+    border: solid 1px white;
+    overflow: hidden;
+}
+
+.container .wrapper-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 100%);
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+
+
+/* BACKGROUNDS */
+.homepage-body {
+    background-image: url(./img/TLOU/eytan-zana-wlf-checkpoint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.review-page {
+    background-image: url(./img/TLOU/tlou2-abby-fighting-ellie.jpg);
+    background-position: right;
+}
+
+.tlou-page {
+    background-image: url(img/TLOU/The_Last_of_Us_Concept_Art_University_EZ-01.jpg);
+}
+
+.tlou-page2 {
+    background-image: url(img/TLOU/The_Last_of_Us_Concept_Art_Overpass_JS-01.jpg);
+}
+
+.apti-page {
+    background-image: url(img/APTI/apti-explosion.jpg);
+}
+
+.apti-page2 {
+    background-image: url(img/APTI/apti-swordplay.jpg);
+}
+
+.ln-page {
+    background-image: url(img/LN/Qg0pZ6im4Is2.jpg);
+}
+
+.ln-page2 {
+    background-image: url(img/LN/petrus-johansson-eyes-artstation.jpg);
+}
+
+.gi-page {
+    background-image: url(img/GI/gi-chinju-forest.jpg);
+}
+
+.gi-page2 {
+    background-image: url(img/GI/Grand_Narukami_Shrine_Concept_Art.jpg);
+}
+
+.rdr-page {
+    background-image: url(img/RDR2/daren-bader-caravan02.jpg);
+}
+
+.rdr-page2 {
+    background-image: url(img/RDR2/daren-bader-intro01.jpg);
+}
+
+.zelda-page {
+    background-image: url(img/ZELDA/BotW_E3_2016_Concept_Artwork_2.png);
+}
+
+.zelda-page2 {
+    background-image: url(img/ZELDA/BotW_The_Master_Trials_Artwork.png);
+}
+
+
+
+/* HOMEPAGE */
+.the-circle {
+    display: flex;
+    left: -257px;
+    top: 270px;
+}
+
+.img-title {
+    margin: 220px 140px 5px 870px;
+    font-family: var(--navFont);
+    font-style: italic;
+}
+
+.up-img {
+    height: 300px;
+    border-radius: 20px;
+    margin: 0px 0px 50px 850px;
+}
+
+.concept-art, .concept-art2 {
+    margin: 0px 140px 0px 850px;
+    font-family: var(--navFont);
+}
+
+.concept-art2 {
+    margin-top: 10px;
+}
+
+
+
+/* TLOU */
+ .tlou-intro-text {
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 300px 560px 0px 75px;
+}
+
+.tlou-intro-text1 {
+    padding: 15px 0px 15px 0px;
+}
+
+/* environment slider tlou */
+.container #slider-img1 {
+    background-image: url(img/TLOU/The_Last_of_Us_Concept_Art_Street_Barricades_AL-01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img2 {
+    background-image: url(img/TLOU/The_Last_of_Us_Concept_Art_Crows_JS-01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img3 {
+    background-image: url(img/TLOU/tlou2-horseback.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* character slider tlou */
+.container #slider-img4 {
+    background-image: url(img/TLOU/tlou2-joel-and-ellie.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img5 {
+    background-image: url(img/TLOU/tlou2-owen-consoling-abby.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img6 {
+    background-image: url(img/TLOU/tlou2-dina-design.jpg);
+    background-position: top;    
+    background-size: cover;
+}
+
+/* object slider tlou */
+.container #slider-img7 {
+    background-image: url(img/TLOU/tlou2-ellie-tattoo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img8 {
+    background-image: url(img/TLOU/tlou2-museum-biome-exhibits.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img9 {
+    background-image: url(img/TLOU/tlou-flamethrower.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* APTI */
+.apti-text {
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 150px 20px 0px 900px;
+}
+
+.apti-middle-child {
+    padding: 15px 0px 15px 0px;
+}
+
+/* environment slider apti */
+.container #slider-img10 {
+    background-image: url(img/APTI/apti-rural-road.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img11 {
+    background-image: url(img/APTI/apti-secret-room.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img12 {
+    background-image: url(img/APTI/apti-architecture-concept.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* character slider apti */
+.container #slider-img13 {
+    background-image: url(img/APTI/apti-amicia-clothing.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img14 {
+    background-image: url(img/APTI/apti-armored-soldier.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img15 {
+    background-image: url(img/APTI/apti-rodrick.jpg);
+    background-position: top;    
+    background-size: cover;
+}
+
+/* object slider apti */
+.container #slider-img16 {
+    background-image: url(img/APTI/apti-crafting-bench.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img17 {
+    background-image: url(img/APTI/apti-cage-pulley.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img18 {
+    background-image: url(img/APTI/apti-crusher-machine.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* LN */
+.ln-text1 { 
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 300px 1300px 0px 40px;
+}
+
+.ln-text2 { 
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 15px 40px 0px 1300px;
+}
+
+/* environment slider ln */
+.container #slider-img19 {
+    background-image: url(img/LN/ln-2-treesntvs.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img20 {
+    background-image: url(img/LN/ln-bucket-emptyspace.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img21 {
+    background-image: url(img/LN/ln-classroom.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+/* character slider ln */
+.container #slider-img22 {
+    background-image: url(img/LN/petrus-johansson-mon-andsix-artstation.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img23 {
+    background-image: url(img/LN/tarsier-studios-concept-faces-berlin-1920-1080.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img24 {
+    background-image: url(img/LN/tarsier-studios-concept-kids-jonas-berlin-1920-1080.webp);
+    background-position: top;    
+    background-size: cover;
+}
+
+/* object slider ln */
+.container #slider-img25 {
+    background-image: url(img/LN/petrus-johansson-collected-concepts-artstation.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img26 {
+    background-image: url(img/LN/petrus-johansson-dinner-table-artstation.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img27 {
+    background-image: url(img/LN/sebastian-bastian-bastian-ln2-hangingsack.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* GI */
+.logo-gi {
+    margin-left: 10px;
+}
+
+.gi-text1 {
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 290px 1250px 0px 20px;
+}
+
+.gi-text2 {
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 15px 1100px 0px 20px;
+}
+
+/* environment slider gi */
+.container #slider-img28 {
+    background-image: url(img/GI/gi-wangshu-inn.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img29 {
+    background-image: url(img/GI/Lantern_Rite_Concept_Art.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img30 {
+    background-image: url(img/GI/City_of_Mondstadt_Concept_Art.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+/* character slider gi */
+.container #slider-img31 {
+    background-image: url(img/GI/arlecchino.jpg_large);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img32 {
+    background-image: url(img/GI/Ride_the_Waves_to_a_Rendezvous_in_Fontaine_Lynette_Early_Creative_Drafts.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img33 {
+    background-image: url(img/GI/Ride_the_Waves_to_a_Rendezvous_in_Fontaine_Freminet_Early_Creative_Drafts.webp);
+    background-position: top;    
+    background-size: cover;
+}
+
+/* object slider gi */
+.container #slider-img34 {
+    background-image: url(img/GI/gi-inn-architecture.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img35 {
+    background-image: url(img/GI/Ride_the_Waves_to_a_Rendezvous_in_Fontaine_Poisson_Concept_Art_2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img36 {
+    background-image: url(img/GI/Ride_the_Waves_to_a_Rendezvous_in_Fontaine_Elynas_Concept_Art_2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* RDR */
+.rdr-text {
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 480px 900px 0px 70px;
+}
+
+.rdr-middle-text {
+    padding: 15px 0px 15px 0px;
+}
+
+/* environment slider rdr */
+.container #slider-img37 {
+    background-image: url(img/RDR2/daren-bader-animal-attack01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img38 {
+    background-image: url(img/RDR2/daren-bader-cliffclimbing02a.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img39 {
+    background-image: url(img/RDR2/daren-bader-rivervalley.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* character slider rdr */
+.container #slider-img40 {
+    background-image: url(img/RDR2/arthurconcept.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img41 {
+    background-image: url(img/RDR2/d5d9015173cbfff4a079d0c941be95a0.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img42 {
+    background-image: url(img/RDR2/petko-ganev-john-marston-tech-render.jpg);
+    background-position: top;    
+    background-size: cover;
+}
+
+/* object slider rdr */
+.container #slider-img43 {
+    background-image: url(img/RDR2/Cattleman_Revolver_-_Red_Dead_Redemption_2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img44 {
+    background-image: url(img/RDR2/Litchfield_Repeater_-_Red_Dead_Redemptioon_2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img45 {
+    background-image: url(img/RDR2/Springfield_Rifle_-_Red_Dead_Redemption_2.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* ZELDA */
+.zelda-text {
+    font-size: 20px;
+    margin: 0px 11px 12px 13px;
+    padding: 180px 70px 0px 600px;
+}
+
+.zelda-text2 {
+    padding: 15px 0px 15px 0px;
+}
+
+/* environment slider zelda */
+.container #slider-img46 {
+    background-image: url(img/ZELDA/lozbotw-master-sword-in-forest.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img47 {
+    background-image: url(img/ZELDA/lozbotw-hyrule-castle-champions-hall.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img48 {
+    background-image: url(img/ZELDA/lozbotw-hyrule-castle-bell-tower.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+/* character slider zelda */
+.container #slider-img49 {
+    background-image: url(img/ZELDA/lozbotw-link-concept.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.container #slider-img50 {
+    background-image: url(img/ZELDA/lozbotw-zelda-concept.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.container #slider-img51 {
+    background-image: url(img/ZELDA/lozbotw-servants-of-the-springs.jpg);
+    background-position: top;    
+    background-size: cover;
+}
+
+/* object slider zelda */
+.container #slider-img52 {
+    background-image: url(img/ZELDA/lozbotw-guardian-turret.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container #slider-img53 {
+    background-image: url(img/ZELDA/lozbotw-medoh-dungeon.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.container #slider-img54 {
+    background-image: url(img/ZELDA/lozbotw-divine-beast-vah-rudania.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+/* REVIEWS */
+.checked {
+    color: orange;
+}
+
+.reviews {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.game-review {
+    padding: 50px 300px 50px 200px;
+}
+
+
+
+/* MEDIA QUERY */
+@media (max-width: 480px) {
+    * { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+    }
+
+    p.concept-art, p.img-title {
+        margin: 0px;
+    }
+
+    nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    
+
+    section {
+        height: 100vh;
+        width: 100%;
+    }
+
+    img.up-img {
+        margin: 0;
+        height: 50px;
+    }
+}
